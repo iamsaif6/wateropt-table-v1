@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-awesome  -->
+    <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- NavBar Start Here -->
+
+    <div class="navbar-wrapper">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" width="70%" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">action list <i class="fas fa-list"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">hafenlieger <i class="fas fa-anchor"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">erwartene schiffe <i class="fas fa-ship"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <!-- NavBar End Here -->
+
+    <main class="main">
+        <section class="action">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-3 text-center">
+                        <h1 class="action__heading">action list</h1>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <p class="action__update"><span>Letztes Update:</span><br>
+                        12. Marz 2020 <br>
+                        15:03:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container-fluid">
+            <div class="table-wrapper">
+                <div class="container-fluid">
+                    <div class="search">
+                            <div class="row justify-content-end align-items-center">
+                                <div class="col-md-3">
+                                    <form action="">
+                                        <input type="text" class="form-control" placeholder="Schiff suchen">
+                                    </form>
+                                </div>
+                            </div>  
+                    </div>
+                    
+
+                    <!-- Table Top BTN -->
+
+                    <div class="table__btn">
+                      <ul>
+                        <li><a href="#">VIP <i class="fas fa-star"></i></a></li>
+                        <li><a href="#">Schiff <i class="fas fa-ship"></i></a></li>
+                        <li><a href="#">Reise <i class="fas fa-map"></i></a></li>
+                        <li><a href="#">Position <i class="fas fa-map-marker-alt"></i></a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Tables -->
+
+                    <div class="table__wrapper">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Job</th>
+                            <th scope="col">TTA</th>
+                            <th scope="col">ETA</th>
+                            <th scope="col">ETD</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Liegeolatz</th>
+                            <th scope="col">Bemerkung</th>
+                            <th scope="col">IMO</th>
+                            <th scope="col">Makler</th>
+                            <th scope="col">akt. Position</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="filter">
+                            <td>Verholen Los</td>
+                            <td>00:14:24</td>
+                            <td>-</td>
+                            <td>25.11.20 15:11</td>
+                            <td>India Bravo</td>
+                            <td>NASDAQ</td>
+                            <td>analyzing</td>
+                            <td>306499</td>
+                            <td>McDermott and Sons</td>
+                            <td>HH</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>00:14:24</td>
+                            <td>25.11.20 15:17</td>
+                            <td>-</td>
+                            <td>Oscar Papa</td>
+                            <td>NYSE</td>
+                            <td>Graphic Interface</td>
+                            <td>507911</td>
+                            <td>Klocko, Medhurst and Ledner</td>
+                            <td>ST --> HH</td>
+                          </tr>
+
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>00:28:48</td>
+                            <td>25.11.20 15:31</td>
+                            <td>-</td>
+                            <td>Echi X-ray Sierra</td>
+                            <td>NASDAQ</td>
+                            <td>well-modulated</td>
+                            <td>882092</td>
+                            <td>Marks-Luettgen</td>
+                            <td>ST --> HH</td>
+                          </tr>
+
+                          <tr>
+                            <td>Verholen Fest</td>
+                            <td>00:57:36</td>
+                            <td>25.11.20 16:00</td>
+                            <td>-</td>
+                            <td>India Bravo</td>
+                            <td>DAS</td>
+                            <td>analyzing</td>
+                            <td>306499</td>
+                            <td>McDermott and Sons</td>
+                            <td>HH</td>
+                          </tr>
+
+                          <tr>
+                            <td>Losmachen</td>
+                            <td>01:12:00</td>
+                            <td>25.11.20 16:15</td>
+                            <td>-</td>
+                            <td>Uniform Echo Juliett</td>
+                            <td>NYSE</td>
+                            <td>Open-architected</td>
+                            <td>487652</td>
+                            <td>Lang. Jakubowski and Watsica</td>
+                            <td>HH</td>
+                          </tr>
+
+                          <tr>
+                            <td>Losmachen</td>
+                            <td>01:40:48</td>
+                            <td>25.11.20 16:43</td>
+                            <td>-</td>
+                            <td>Uniform Alfa Foxtrot</td>
+                            <td>NYSE</td>
+                            <td>Ruduced</td>
+                            <td>445787</td>
+                            <td>Von LLC</td>
+                            <td>HH</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>01:55:12</td>
+                            <td>25.11.20 16:58</td>
+                            <td>-</td>
+                            <td>Papa Kilo Golf</td>
+                            <td>NYSE</td>
+                            <td>moduler</td>
+                            <td>539994</td>
+                            <td>Zieme, Kiehn and Okuneva</td>
+                            <td>ST --> HH </td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>02:24:00</td>
+                            <td>25.11.20 17:27</td>
+                            <td>-</td>
+                            <td>Sierra Papa</td>
+                            <td>NYSE</td>
+                            <td>Down-sized</td>
+                            <td>604920</td>
+                            <td>Barton Inc</td>
+                            <td>ST --> HH </td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>02:52:48</td>
+                            <td>25.11.20 17:55</td>
+                            <td>-</td>
+                            <td>Lima Echo</td>
+                            <td>NASDAQ</td>
+                            <td>matrix</td>
+                            <td>993815</td>
+                            <td>Nitzsche, Lynch and Stamm</td>
+                            <td>CUS --> GL </td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>02:52:48</td>
+                            <td>25.11.20 17:55</td>
+                            <td>-</td>
+                            <td>November Tango Victor</td>
+                            <td>NASDAQ</td>
+                            <td>productivity</td>
+                            <td>194895</td>
+                            <td>Hoeger, Stoltenberg and Mayert</td>
+                            <td>TI --> ST</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>02:52:48</td>
+                            <td>25.11.20 17:55</td>
+                            <td>-</td>
+                            <td>Yankee Quebec Foxtrot</td>
+                            <td>NYSE</td>
+                            <td>Progressive</td>
+                            <td>743801</td>
+                            <td>Stark-Towne</td>
+                            <td>CUX --> GL</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>03:07:12</td>
+                            <td>25.11.20 18:10</td>
+                            <td>-</td>
+                            <td>Mike Uniform Delta</td>
+                            <td>NASDAQ</td>
+                            <td>system engine</td>
+                            <td>717311</td>
+                            <td>Wilderman and Sons</td>
+                            <td>TI --> ST</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>03:07:12</td>
+                            <td>25.11.20 18:10</td>
+                            <td>-</td>
+                            <td>Whiskey Tango Lima</td>
+                            <td>NASDAQ</td>
+                            <td>definition</td>
+                            <td>294250</td>
+                            <td>Bruen and Sons</td>
+                            <td>TI --> ST</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>03:36:00</td>
+                            <td>25.11.20 18:39</td>
+                            <td>-</td>
+                            <td>Delta Kilo Alfa</td>
+                            <td>NYSE</td>
+                            <td>non-volatile</td>
+                            <td>939639</td>
+                            <td>Wolf, Johnston and Koepp</td>
+                            <td>BRB --> TI</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>04:04:48</td>
+                            <td>25.11.20 19:07</td>
+                            <td>-</td>
+                            <td>Sierra Yankee Papa</td>
+                            <td>NASDAQ</td>
+                            <td>Focused</td>
+                            <td>838230</td>
+                            <td>Auer and Sons</td>
+                            <td>E1 --> CUX</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>04:04:00</td>
+                            <td>25.11.20 19:51</td>
+                            <td>-</td>
+                            <td>India Delta</td>
+                            <td>NYSE</td>
+                            <td>Quality Focused</td>
+                            <td>771225</td>
+                            <td>McKenzie, Kuvalis and Grady</td>
+                            <td>BRB --> TI</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>05:02:24</td>
+                            <td>25.11.20 20:05</td>
+                            <td>-</td>
+                            <td>Oscar Sierra</td>
+                            <td>NASDAQ</td>
+                            <td>initiative</td>
+                            <td>635420</td>
+                            <td>Lannon, Nadar and Christiansen</td>
+                            <td>BRB --> TI</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>06:00:00</td>
+                            <td>25.11.20 21:03</td>
+                            <td>-</td>
+                            <td>Echo Lima Oscar</td>
+                            <td>NASDAQ</td>
+                            <td>Versatile</td>
+                            <td>334823</td>
+                            <td>McGyver, Rogahn and Grant</td>
+                            <td>--> E1</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>06:14:24</td>
+                            <td>25.11.20 21:17</td>
+                            <td>-</td>
+                            <td>Oscar Whiskey Tango</td>
+                            <td>NASDAQ</td>
+                            <td>Virtual</td>
+                            <td>537028</td>
+                            <td>Schuster, Kuvalis and Gusikowski</td>
+                            <td>--> HO</td>
+                          </tr>
+
+                          <tr>
+                            <td>Festmachen</td>
+                            <td>06:14:24</td>
+                            <td>25.11.20 21:17</td>
+                            <td>-</td>
+                            <td>Bravo Juliett</td>
+                            <td>NASDAQ</td>
+                            <td>bottom-line</td>
+                            <td>736682</td>
+                            <td>Stanton-Sanford</td>
+                            <td> HO</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Main js file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
